@@ -4,7 +4,7 @@ class DataModel {
 }
 
 // The View
-protocol ViewDelegate: class {
+protocol ViewDelegate: AnyObject {
     func updateView(data: String)
 }
 
