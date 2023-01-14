@@ -46,3 +46,11 @@ class Presenter: PresenterProtocol {
         view?.updateData(data: data)
     }
 }
+
+let interactor = Interactor()
+let presenter = Presenter()
+presenter.interactor = interactor
+let viewController = ViewController()
+presenter.viewController = viewController
+viewController.interactor = interactor
+viewController.presenter = presenter
